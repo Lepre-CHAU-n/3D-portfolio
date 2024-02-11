@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [theme, setTheme] = useState("dark"); // Default theme is dark
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,15 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Function to toggle the theme
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("dark")
+    } else {
+      setTheme("dark")
+    }
+  };
 
   return (
     <nav
@@ -42,10 +53,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+         
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Chau Pham &nbsp;
+            <span className='sm:block hidden'></span>
           </p>
         </Link>
 
@@ -61,7 +72,9 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
         </ul>
+
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

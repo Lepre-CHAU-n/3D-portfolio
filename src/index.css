@@ -19,6 +19,11 @@
   display: block;
 }
 
+.btn {
+  @apply outline-none text-white shadow-md shadow-primary bg-tertiary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+}
+  
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -45,8 +50,8 @@
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #b00b69 1.9%, #1d1cc9 97.5%);
+  background: -webkit-linear-gradient(-90.13deg,#b00b69 1.9%, #1d1cc9 97.5%);
 }
 
 .orange-text-gradient {
@@ -125,6 +130,24 @@
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+
+.blue-gradient_text {
+  @apply bg-gradient-to-r from-[#804dee] to-[#9b4f96] bg-clip-text text-transparent;
+}
+
+:root {
+  --primary-color: #050816; /* Dark mode primary color */
+  --gradient: linear-gradient(to right,#240e54 , #050816); /* Dark mode gradient */
+}
+/* #804dee , #11998e, #2f80ed,#38ef7d ,#b00b69,1d1cc9, 0038a8, #240e54, #cac5c5  */
+
+body {
+  background: var(--gradient);
+  color: var(--primary-color);
+  
+}
+
+
 
 @keyframes mulShdSpin {
   0%,
