@@ -106,7 +106,7 @@ const Stars = () => {
 
   return (
     <Points ref={pointsRef} positions={positions} colors={colors}>
-      <PointMaterial size={2.5} sizeAttenuation transparent opacity={0.5} depthWrite={false} vertexColors />
+      <PointMaterial size={2.3} sizeAttenuation transparent opacity={0.5} depthWrite={false} vertexColors />
     </Points>
   );
 };
