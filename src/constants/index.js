@@ -316,7 +316,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/Lepre-CHAU-n/project_3D_developer_portfolio",
+    source_code_link: "https://github.com/Lepre-CHAU-n/3D-portfolio",
   },
 ];
 
