@@ -116,16 +116,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Animator",
+    title: "Freelance Animator",
     company_name: "Konia Group",
-    icon: starbucks,
+    // icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2021 - September 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Made a one-minute animation advertisement using Procreate within the deadline of 2 months",
+      "Conveyed clearly and concisely to the team manager on the schedule and expectations of the final project",
+      "Showed initiative on the project by updating my work in progress and incorporating changes accordingly"
     ],
   }
   // {
@@ -198,130 +197,126 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Replicake",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed an online recipe website allowing users to upload recipes as well as browse, rate, and comment on recipes",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name:  "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Java SpringBoot",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/HPhilipN/C276-Project",
   },
   {
-    name: "Job IT",
+    name: "Dexbooru",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Created an anime image board that allows users to distribute and consume image-related media",
     tags: [
       {
-        name: "react",
+        name: "Svelte",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "TypeScript",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/t-shah02/dexbooru-rewrite",
   },
   {
-    name: "Trip Guide",
+    name: "Padia Learning",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a real-time, competitive math game for two players using UDP-based communication in Javascript",
     tags: [
       {
-        name: "nextjs",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Socket.IO",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/LongHPham/paidalearning",
   },
   {
-    name: "Trip Guide",
+    name: "Pokedex",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a Pokedex application using React.js and Axios for fetching data from the PokeAPI",
     tags: [
       {
-        name: "nextjs",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Lepre-CHAU-n/pokedex",
   },
   {
-    name: "Trip Guide",
+    name: "Wella App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Created a web app to stay informed about the day's forecast and upcoming events in one convenient platform",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "React",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/gursewaktut/weatherCalendar",
   },
   {
-    name: "Trip Guide",
+    name: "Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a dynamic and visually immersive portfolio website with interactive 3D graphics",
     tags: [
       {
-        name: "nextjs",
+        name: "Three.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "React",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Lepre-CHAU-n/project_3D_developer_portfolio",
   },
 ];
 

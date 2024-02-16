@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
+import { FaLinkedin, FaGithub, FaFile } from 'react-icons/fa'; // Import icons from react-icons
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -10,7 +10,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
-  const phrases = ["3D visuals", "user interfaces", "web applications"];
+  const phrases = ["mobile applications", "user interfaces", "web applications"];
 
   useEffect(() => {
     let ticker;
@@ -37,7 +37,7 @@ const Hero = () => {
   }, [text, isDeleting, loopNum, phrases, typingSpeed]);
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-[55vh] mx-auto`}>
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -62,11 +62,24 @@ const Hero = () => {
               |
             </motion.span>
           </motion.p>
+        {/* Social Icons */}
+        <div className='flex mt-4' >
+
+            <a href="https://www.linkedin.com/in/chau-pham-458051212/" target="_blank" rel="noopener noreferrer" className='text-white text-6xl mx-2'> 
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/Lepre-CHAU-n" target="_blank" rel="noopener noreferrer" className='text-white text-6xl mx-2'>
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/chau-pham-458051212/overlay/1706424071499/single-media-viewer/?profileId=ACoAADXBfkQBdoDYmXB779OqWbzinngrp9lgCYg" target="_blank" rel="noopener noreferrer" className='text-white text-6xl mx-2'>
+              <FaFile />
+            </a>
+          </div>
         </div>
       </div>
-
-      <ComputersCanvas />
-
+    
+        {/* <ComputersCanvas  /> */}
+   
     </section>
   );
 };
