@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "serve -s dist export NODE_OPTIONS=--max_old_space_size=4096"
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
